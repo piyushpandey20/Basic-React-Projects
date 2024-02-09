@@ -5,6 +5,8 @@ import RandomColor from "./components/random-color";
 import StarRating from "./components/star-rating";
 import ImageSlider from "./components/image-slider";
 import LoadMoreData from "./components/load-more-data";
+import TreeView from "./components/tree-view";
+import menus from "./components/tree-view/data";
 
 function App() {
   return (
@@ -23,6 +25,8 @@ function App() {
       />
       {/* LoadMoreProducts */}
       <LoadMoreData />
+      {/* Tree-View */}
+      <TreeView menus={menus} />
     </div>
   );
 }
